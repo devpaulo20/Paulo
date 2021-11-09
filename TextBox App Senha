@@ -1,0 +1,15 @@
+ string Nome;
+            int Senha = 123;
+
+            Nome = textBox1.Text;
+            Senha = Convert.ToInt16(textBox2.Text);
+
+            if (Senha == 123)
+            {
+
+                MessageBox.Show("Acesso permitido: " + Nome);
+            }
+            else {
+                MessageBox.Show("Acesso negado: " + Nome);
+            
+            }
