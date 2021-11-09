@@ -1,2 +1,23 @@
-Paulo
-boa noite professor!
+ int senha = 123;
+
+            for (int i = 0; i < 3; i++)
+            {
+
+                Console.WriteLine("Usuario, digite sua senha");
+                senha = int.Parse(Console.ReadLine());
+
+                if (senha == 123)
+                {
+                    Console.WriteLine("Acesso Permitido");
+                }
+                else
+                {
+                    Console.WriteLine("Acesso negado ");
+                    Console.WriteLine("tente novamente!!!");
+                }
+            }
+            Console.ReadLine();
+
+        }
+    }
+}
