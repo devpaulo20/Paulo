@@ -1,0 +1,34 @@
+     string produto;
+            double vl_prod, vl_total, vl_parc;
+            int qtd_prod;
+
+            Console.WriteLine(" Digite o nome do Produto: ");
+            produto = Console.ReadLine();
+
+            Console.WriteLine(" Digite o valor do produto: ");
+            vl_prod = double.Parse(Console.ReadLine());
+
+            Console.WriteLine(" Digite a quantidade do produto: ");
+            qtd_prod = int.Parse(Console.ReadLine());
+
+
+
+            vl_total = qtd_prod * vl_prod;
+            vl_parc = vl_total / 3;
+
+            if (vl_total >= 300)
+
+            {
+                Console.WriteLine("Bom Cliente!");
+                Console.WriteLine(" Valor total da compra " + vl_total);
+                Console.WriteLine(" Valor de cada parcela: " + vl_parc);
+            }
+            else 
+            {
+                Console.WriteLine(" Cliente Mediano!");
+                Console.WriteLine(" Valor total da compra " + vl_total); 
+                Console.WriteLine(" Valor de cada parcela: " + vl_parc);
+                Console.ReadLine();
+            }
+
+            /* Atividade de Tp Paulo Henrique Cardoso de Souza*/
