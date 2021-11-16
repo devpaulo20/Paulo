@@ -1,0 +1,72 @@
+
+            double a ,b, soma;
+            Console.WriteLine("digite o valor de A: ");
+            a = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("digite o valor de B: ");
+            b = double.Parse(Console.ReadLine());
+
+            soma = a + b;
+
+            Console.WriteLine("o valor da soma entre A e B é: " + soma);
+            Console.ReadLine();
+
+
+
+
+
+
+
+
+     double a ,b, add, sub, mult, div;
+            Console.WriteLine("digite o valor de A: ");
+            a = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("digite o valor de B: ");
+            b = double.Parse(Console.ReadLine());
+
+            add = a + b;
+            sub = a - b;
+            mult = a * b;
+            div = a / b;
+
+            Console.WriteLine("o valor da adição entre A e B é: " + add);
+            Console.WriteLine("o valor da subtração entre A e B é: " + sub);
+            Console.WriteLine("o valor da multiplicação entre A e B é: " + mult);
+            Console.WriteLine("o valor da divisão entre A e B é: " + div);
+            Console.ReadLine();
+
+
+
+
+
+
+            int placa;
+            Console.WriteLine("informe a placa do veiculo: ");
+            placa = int.Parse(Console.ReadLine());
+            if (placa == 1 || placa == 2){
+                Console.WriteLine("seu rodizio é segunda-feira! ");
+            }
+            if (placa == 3 || placa == 4){
+                Console.WriteLine("seu rodizio é terça-feira! ");
+            }
+            if (placa == 5 || placa == 6)
+            {
+                Console.WriteLine("seu rodizio é quarta-feira! ");
+            }
+            if (placa == 7 || placa == 8)
+            {
+                Console.WriteLine("seu rodizio é quinta-feira! ");
+            }
+            else
+            {
+                Console.WriteLine("seu rodizio é sexta-feira! ");
+            }
+            Console.ReadLine();
+
+
+
+
+
+
+
