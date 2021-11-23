@@ -1,0 +1,134 @@
+Aula switch Case!
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Aulaswitchcase
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+
+            double valor, desconto, total;
+                int qte, opcao;
+
+                for (int i = 0; i < 3; i++)
+                {
+
+                    Console.WriteLine("Opção 1 - Desconto de 10% ");
+                    Console.WriteLine("Opção 2 - Sem Desconto ");
+                    Console.WriteLine("Opção 3 -Desconto de 15% ");
+                    Console.WriteLine();
+                    Console.WriteLine("Digite o valor do Produto: ");
+                    valor = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Digite a quantidade do Produto: ");
+                    qte = int.Parse(Console.ReadLine());
+                    total = qte * valor;
+                    Console.WriteLine("Usuario, escolha a opção: ");
+                    opcao = int.Parse(Console.ReadLine());
+
+                    switch (opcao)
+                    {
+                        case 1:
+                            desconto = total * 10 / 100.0;
+                            Console.WriteLine("Desconto de R$" + desconto);
+                            break;
+                        case 2:
+                            Console.WriteLine("Sem Desconto");
+                            break;
+                        case 3:
+                            desconto = total * 15 / 100.0;
+                            Console.WriteLine("Desconto de R$" + desconto);
+                            break;
+                        default:
+                            Console.WriteLine("Número invalido");
+                            break;
+                    }
+
+
+
+                }
+            Console.ReadLine();
+        }
+    }
+}
+
+
+
+
+
+Soma entre Números com Switch Case.
+
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AulaCalculadora
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            double A, B, Resultado;
+            int OP;
+
+            for (int i = 0; i < 6; i++)
+            {
+
+                Console.WriteLine("Escolha 1 = Soma ");
+                Console.WriteLine("Escolha 2 = Subtração");
+                Console.WriteLine("Escolha 3 = Multiplicação");
+                Console.WriteLine("Escolha 4 = Divisão");
+                Console.WriteLine("-#-#-#-#-#-#-#-#-#-#-#-#-#");
+                Console.WriteLine("Usuario, Digite um Número: ");
+                A = double.Parse(Console.ReadLine());
+                Console.WriteLine("Usuario Digite outro Número: ");
+                B = double.Parse(Console.ReadLine());
+                Console.WriteLine("Usuario, escolha a operação");
+                OP = int.Parse(Console.ReadLine());
+
+                switch (OP)
+                {
+                    case 1:
+                        Resultado = A + B;
+                        Console.WriteLine("A Soma é :" + Resultado);
+                        break;
+                    case 2:
+                        Resultado = A - B;
+                        Console.WriteLine("A Subtração é: " + Resultado);
+                        break;
+                    case 3:
+                        Resultado = A * B;
+                        Console.WriteLine("A Multiplicação é: " + Resultado);
+                        break;
+                    case 4:
+                        Resultado = A / B;
+                        Console.WriteLine("A Divisão é: " + Resultado);
+                        break;
+                    default:
+                        Console.WriteLine("Usuario, Número Invalido");
+                        break;
+                }
+            }
+
+        
+            Console.ReadLine();
+
+        }
+    }
+}
+
